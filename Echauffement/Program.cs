@@ -56,6 +56,7 @@ class Program
                 }
                 else
                 {
+                    argent = argent - 250;
                     Console.WriteLine("merci pour votre achat");
                 }
             }
@@ -68,6 +69,7 @@ class Program
                 }
                 else
                 {
+                    argent = argent - 100;
                     Console.WriteLine("merci pour votre achat");
                 }
             }
@@ -80,6 +82,7 @@ class Program
                 }
                 else
                 {
+                    argent = argent - 500;
                     Console.WriteLine("merci pour votre achat");
                 }
             }
@@ -92,10 +95,15 @@ class Program
                 }
                 else
                 {
+                    argent = argent - 600;
                     Console.WriteLine("merci pour votre achat");
                 }
             }
-            }
+        if (choix != 1 && choix != 2 && choix != 3 && choix != 4)
+        {
+                Console.WriteLine("réponse non valide");
+        }
+       }
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
         // Lorsque l'utilisateur respecte ces demandes, retirez le prix de l'arme de l'argent de l'utilisateur, puis confirmez à l'utilisateur que l'action a été effectuée 
         // Dans tous les autres cas, informez l'utilisateur que l'action n'a pas été possible
