@@ -35,7 +35,8 @@ class Program
         Console.WriteLine("pistolet mitrailleur : 500 euro");
         Console.WriteLine("fisil d'assaut : 600 euro");
         // Etape 6 : laissez l'utilisateur choisir l'une de ces 4 armes en indiquant un nombre entre 1 et 4
-
+        Console.WriteLine("coisissez une arme 1: revolver 2: couteau 3: pistolet mitrailleur 4: fusil d'assaut");
+        int choix = Convert.ToInt32(Console.ReadLine());
         // Etape 7a : vérifiez si l'utilisateur a assez d'argent par rapport à la somme qu'il avait rentré à l'étape 4
 
         // Etape 7b : modifiez l'étape 7a pour ajouter un connecteur logique qui vérifie que l'utilisateur est majeur en plus d'avoir assez d'argent
